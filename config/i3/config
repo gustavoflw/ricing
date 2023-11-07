@@ -201,4 +201,3 @@ exec pasystray
 exec_always picom -f --config "$HOME/.config/picom/picom.conf"
 exec "$HOME/live_wallpaper.sh"
 default_border pixel 0
-exec xrandr --output HDMI-A-0 --auto --right-of eDP
