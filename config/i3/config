@@ -106,12 +106,6 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-#set $ws1 "Terminal"
-#set $ws2 "Firefox"
-#set $ws3 "Chrome (Personal)"
-#set $ws4 "Chrome (Work)"
-#set $ws5 "Discord"
-#set $ws6 "Spotify"
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -240,3 +234,6 @@ gaps horizontal 2
 # i3-radius
 smart_borders on
 smart_borders no_gaps
+
+# Keyboard layout
+exec --no-startup-id setxkbmap -model abnt2 -layout br -variant abnt2
