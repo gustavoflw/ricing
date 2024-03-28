@@ -11,7 +11,7 @@
 
 
 #### Demonstration
-![alt text](https://github.com/gustavoflw/ricing/blob/main/ricing.jpg?raw=true)
+![alt text](https://github.com/gustavoflw/ricing/blob/master/ricing.jpg?raw=true)
 
 ```bash
 (btw i use arch)
