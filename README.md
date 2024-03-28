@@ -3,11 +3,11 @@
 #### Folder structure
 
 ##### config
-    - Contains configuration file for conky, i3, i3status, picom, polybar, etc
+- Contains configuration file for conky, i3, i3status, picom, polybar, etc
 ##### sh
-    - Contains .sh executable files that are used to setup a number of different things
+- Contains .sh executable files that are used to setup a number of different things
 ##### xwinwrap
-    - Contains a fork of xwinwrap modified by myself that allows excluding xwinwrap from picom's opacity rules
+- Contains a fork of xwinwrap modified by myself that allows excluding xwinwrap from picom's opacity rules
 
 
 #### Demonstration
