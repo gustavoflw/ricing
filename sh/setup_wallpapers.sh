@@ -76,3 +76,5 @@ for monitor in "${connected_monitors[@]}"; do
     echo $output_command >> $output_file
 
 done
+
+$output_file
