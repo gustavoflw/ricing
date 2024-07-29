@@ -196,6 +196,9 @@ bindsym $mod+r mode "resize"
 # My config #
 #############
 
+# Notifications
+exec --no-startup-id dunst -config $HOME/.config/dunst/dunstrc
+
 # Clipboard
 bindsym Print exec maim -u | xclip -selection clipboard -t image/png -i
 
@@ -227,13 +230,13 @@ exec --no-startup-id polybar --config=$HOME/.config/polybar/config
 # i3-gaps
 default_border pixel 0
 for_window [class=".*"] border pixel 0 #*
-gaps inner 25
-gaps outer 50
-gaps horizontal 2
+gaps inner 15
+gaps outer 15
+gaps horizontal 15
 
 # i3-radius
 smart_borders on
 smart_borders no_gaps
 
 # Keyboard layout
-exec --no-startup-id setxkbmap -model abnt2 -layout br -variant abnt2
+#exec --no-startup-id setxkbmap -model abnt2 -layout br -variant abnt2

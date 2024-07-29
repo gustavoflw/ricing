@@ -1,0 +1,14 @@
+[global]
+font = Monospace 10
+
+[shortcuts]
+context = ctrl+space
+
+[urgency_low]
+background = "#222222"
+
+[urgency_normal]
+background = "#333333"
+
+[urgency_critical]
+background = "#FF0000"
