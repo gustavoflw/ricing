@@ -17,12 +17,12 @@
 ;==========================================================
 
 [colors]
-background = #282A2E
-background-alt = #373B41
+background = #000000
+background-alt = #0074FF
 foreground = #C5C8C6
-primary = #F0C674
-secondary = #8ABEB7
-alert = #A54242
+primary = #0061FF
+secondary = #FFEC00
+alert = #FF0000
 disabled = #707880
 
 [bar/example]
@@ -57,7 +57,7 @@ font-3 = FontAwesome5Brands:style=Regular:size=10;4
 
 modules-left = xworkspaces xwindow
 modules-center = pulseaudio playerctl now-playing
-modules-right = filesystem xkeyboard memory cpu wlan eth date systray
+modules-right = bluetooth usb aurhelper filesystem xkeyboard memory cpu wlan eth date systray
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -132,6 +132,24 @@ tail = true
 format = <label>
 exec = $HOME/.config/polybar/modules/now-playing.py
 click-right = "kill -USR1 $(pgrep --oldest --parent %pid%)"
+
+[module/aurhelper]
+type = custom/script
+exec = $HOME/.config/polybar/modules/aurhelper.sh
+interval = 600
+
+[module/usb]
+type = custom/script
+exec = $HOME/.config/polybar/modules/usb.sh
+tail = true
+click-left = $HOME/.config/polybar/modules/usb.sh --mount &
+click-right = $HOME/.config/polybar/modules/usb.sh --unmount &
+
+[module/bluetooth]
+type = custom/script
+exec = $HOME/.config/polybar/modules/bluetooth.sh
+tail = true
+click-left = $HOME/.config/polybar/modules/bluetooth.sh --toggle &
 
 [module/xkeyboard]
 type = internal/xkeyboard
